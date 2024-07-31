@@ -1,0 +1,17 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: slack-message-demo
+  title: My Slack message demo
+  description: Send a message via Slack
+spec:
+  owner: chauvm
+  type: service
+
+  steps:
+    # this step is an example of using the webhook action
+    - id: send-slack-message
+      name: Send slack message via Slack webhook
+      action: slack:sendMessage:webhook
+      input:
+        message: "Hello, chauvm!"
