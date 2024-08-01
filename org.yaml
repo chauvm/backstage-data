@@ -7,6 +7,14 @@ metadata:
 spec:
   memberOf: [demo-group]
 ---
+# Add gargrag for github sign in
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: gargrag
+spec:
+  memberOf: [demo-group]
+---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
 apiVersion: backstage.io/v1alpha1
 kind: User
